@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            APP
+        </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navi">
+           <h1>Sticky Thoughts</h1> 
+        </div>
+        <div class="container">
+            <div class="book">
+            <h2>Random day</h2>
+            <h4>Aishu</h4>
+            <p>Have fun in life konjam>!</p>
+            <button onclick="deleteitem(event)">delete</button>
+                </div>
+        </div>
+        <div class="popupitem">
+            <div class="popupbox">
+                <h2>Add your thoughts</h2>
+                <form>
+                    <input type="text" placeholder="Enter your title" id="title">
+                    <input type="text" placeholder="Your name here" id="bookauthor">
+                    <textarea placeholder="Enter your thoughts here" id="thoughts"></textarea>
+                    <button id="addthought">Add</button>
+                    <button id="cancelthought">Cancel</button>
+                </form>
+            </div>
+        </div>
+        <button class="add" id="popup">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-9" width="24" height="24">
+              <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          
+        <script src="index.js"></script>
+    </body>
+</html>

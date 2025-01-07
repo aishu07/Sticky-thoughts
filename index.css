@@ -1,0 +1,164 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Consistent padding and border */
+}
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #f3e5f5, #e1bee7); /* Gradient from light lavender to soft pinkish lavender */
+    color: #212121; /* Dark text for better readability */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stacks content vertically */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.navi {
+    width: 100%;
+    height: 100px;
+    font-size: 36px;
+    font-family: 'Georgia', serif;
+    background-color: #6a1b9a; /* Deep purple for header */
+    color: #ffffff; /* White text for contrast */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    border-bottom: 4px solid #4a148c; /* Darker purple border at the bottom */
+}
+
+/* Main Content */
+.container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Cards wrap responsively */
+    justify-content: center;
+    gap: 20px; /* Spacing between cards */
+}
+
+.book {
+    padding: 20px;
+    width: 280px;
+    background-color: #ede7f6; /* Light lavender card background */
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.book:hover {
+    transform: translateY(-5px); /* Slight lift */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.book h2 {
+    color: #6a1b9a; /* Deep purple for titles */
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.book p {
+    font-size: 16px;
+    color: #424242; /* Darker muted text color for readability */
+    margin-bottom: 15px;
+}
+
+.book button {
+    background-color: #7e57c2; /* Medium purple button */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book button:hover {
+    background-color: #5e35b1; /* Darker purple hover effect */
+}
+
+/* Floating Add Button */
+.add {
+    background-color: #6a1b9a; /* Deep purple */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add:hover {
+    background-color: #4a148c; /* Darker purple hover effect */
+}
+
+/* Popup Overlay */
+.popupitem {
+    background-color: rgba(0, 0, 0, 0.6); /* Dim overlay */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none; /* Hidden by default */
+    z-index: 1000; /* On top of other elements */
+}
+
+/* Popup Box */
+.popupbox {
+    background-color: #ffffff; /* White for the popup box */
+    width: 40%;
+    padding: 30px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for focus */
+    display: none; /* Hidden by default */
+}
+
+.popupbox input, .popupbox textarea {
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #7e57c2; /* Purple border for input */
+    border-radius: 5px;
+    color: #333; /* Neutral input text color */
+}
+
+.popupbox input:focus, .popupbox textarea:focus {
+    outline: none;
+    border-color: #6a1b9a; /* Deep purple on focus */
+}
+
+.popupbox button {
+    background-color: #7e57c2; /* Bright purple action button */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popupbox button:hover {
+    background-color: #5e35b1; /* Darker purple hover effect */
+}
